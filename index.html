@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Selftour - One road with endless experiences.">
+    <meta name="author" content="Selftour - Walk, Cycle & Drive">
+    <title>Selftour - Walk, Cycle & Drive</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Selftour">
+    <meta name="application-name" content="Selftour">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/fonts/selftour-fonts.css" rel="stylesheet">
+    <link href="css/custom.css?v=1.2765" rel="stylesheet">
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="rev-slider-files/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="rev-slider-files/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <style>
+        .tp-caption.NotGeneric-Title,
+        .NotGeneric-Title {
+            font-family: 'pointextra_bold';
+            color: rgba(255, 255, 255, 1.00);
+            font-size: 70px;
+            line-height: 70px;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            background-color: transparent;
+            border-color: transparent;
+            border-style: none;
+            border-width: 0px;
+            border-radius: 0 0 0 0px
+        }
+        
+        .tp-caption.NotGeneric-SubTitle,
+        .NotGeneric-SubTitle {
+            color: rgba(255, 255, 255, 1.00);
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            background-color: transparent;
+            border-color: transparent;
+            border-style: none;
+            border-width: 0px;
+            border-radius: 0 0 0 0px;
+            letter-spacing: 4px
+        }
+        
+        .tp-caption.NotGeneric-Icon,
+        .NotGeneric-Icon {
+            color: rgba(255, 255, 255, 1.00);
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgba(255, 255, 255, 0);
+            border-style: solid;
+            border-width: 0px;
+            border-radius: 0px 0px 0px 0px;
+            letter-spacing: 3px
+        }
+        
+        .tp-caption.Hero-Button,
+        .Hero-Button {
+            /*color: rgba(255, 255, 255, 1.00);*/
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            width: 800px;
+            /*background-color: rgba(0, 0, 0, 0);
+			border-color: rgba(255, 255, 255, 0.50);
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 0px 0px 0px 0px;			
+			letter-spacing: 3px
+			*/
+        }
+        
+        .tp-caption.Hero-Button:hover,
+        .Hero-Button:hover {
+            /*color: rgba(0, 0, 0, 1.00);*/
+            text-decoration: none;
+            background: none !important;
+            /*background-color: rgba(255, 255, 255, 1.00);*/
+            /*border-color: rgba(255, 255, 255, 1.00);*/
+            /*border-style: solid;
+			border-width: 1px;
+			border-radius: 0px 0px 0px 0px;
+			cursor: pointer
+			*/
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" ></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+    <!-- Header================================================== -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="index.html" title="Selftour - Walk, Cycle & Drive">Selftour - Walk, Cycle & Drive</a></h1>
+                    </div>
+                </div>
+                <nav class="col-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/selftour-logo-azul.png" height="45" alt="City tours" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="megamenu submenu">
+                                <a href="tourlover-registration-form.html" data-lang="shareexperience">									
+									Share your experiences
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link_1" data-lang="signup">									
+									Sign Up
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link" data-lang="login">									
+									Log In									
+								</a>
+                            </li>
+                            <li class="megamenu submenu" id="language-menu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">
+                                    <i class="icon_globe-2"></i>EN
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <div class="menu-wrapper" style="text-align: left;">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="about.html" id="translate2" data-text="Español" data-file="es" data-index="0"><strong>Español</strong> México</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> España</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> Argentina</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="contact_us_1.html" id="translate" data-text="English" data-file="en" data-index="1"><strong>English</strong> United States</a></li>
+                                                <li><a href="contact_us_2.html"><strong>English</strong> Canada</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate3" data-text="Français" data-file="fr" data-index="2"><strong>Français</strong> France</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate4" data-text="China" data-file="zh" data-index="3"><strong>China</strong> Chinnese</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End row -->
+                                </div>
+                                <!-- End menu-wrapper -->
+                            </li>
+                            <li class="submenu" id="currency-menu">
+                                <a href="javascript:void(0);" class="show-submenu">
+                                    <i class="icon_currency"></i> USD
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <ul style="text-align: left;">
+                                    <li><a href="all_restaurants_list.html"><strong>USD</strong> US Dollar</a></li>
+                                    <li><a href="all_restaurants_grid.html"><strong>MXN</strong> Mexican Peso</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu -->
+                </nav>
+            </div>
+        </div>
+        <!-- container -->
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <!-- Slider -->
+        <div id="rev_slider_64_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="youtube-hero1" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+            <div id="rev_slider_64_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-168" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="3000" data-thumb="rev-slider-files/assets/100x50_youtubebg.jpg"
+                        data-rotate="0" data-saveperformance="off" data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/youtubebg2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- BACKGROUND VIDEO LAYER -->
+                        <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-ytid="LySYun6y6BE" data-nextslideatend="true" data-videoattributes="version=4&amp;enablejsapi=1&amp;html5=1&amp;hd=1&wmode=opaque&showinfo=0&rel=0;" data-videorate="1"
+                            data-videowidth="100%" data-videoheight="100%" data-videocontrols="none" data-videostartat="00:00" data-videoendat="01:00" data-videoloop="0" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"></div>
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper" id="slide-168-layer-10" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
+                            data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":750,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:rgba(0, 0, 0, 0.15);"> </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <!-- <div class="tp-caption NotGeneric-Icon   tp-resizeme" id="slide-168-layer-8" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-66','-64','-78','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap;cursor:default;"><i class="pe-7s-film"></i> </div> -->
+
+                        <!-- LAYER NR. 3 -->
+                        <!-- <div class="tp-caption NotGeneric-Title   tp-resizeme" id="slide-168-layer-20" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-22','12']" data-fontsize="['70','70','70','36']" data-lineheight="['70','70','70','36']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; margin-left: 20px; ">One road<br>with endless<br>experiences. </div>  -->
+
+                        <!-- LAYER NR. 4 -->
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption Hero-Button" id="slide-168-layer-7" data-x="center" data-hoffset="['0','0','0','0']" data-y="center" data-voffset="200" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="on" data-type="button" data-responsive_offset="on"
+                            data-responsive="off" data-frames='[{"delay":1250,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1);bg:rgba(255, 255, 255, 1);bc:rgba(255, 255, 255, 1);bw:1 1 1 1;"}]'
+                            data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index:9;">
+                            <div id="search_container_2" style="position: absolute; top: 0; background: none; height: auto; left: 0;">
+                                <div id="search_2" style="padding:0; background: none;">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active show" id="tours">
+                                            <form action="all_tours_list.html">
+                                                <div class="row no-gutters custom-search-input-2">
+                                                    <div class="col-lg-7">
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text" placeholder="Where...">
+                                                            <i class="icon_pin_alt"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <input class="form-control date-pick" type="text" name="dates" placeholder="When..">
+                                                            <i class="icon_calendar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <input type="submit" class="btn_search" value="Search">
+                                                    </div>
+                                                </div>
+                                                <!-- /row -->
+                                            </form>
+                                        </div>
+                                        <!-- End tab -->
+                                    </div>
+                                </div>
+                                <!-- End search_container_2 -->
+                            </div>
+
+
+
+                        </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+            </div>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+        <div class="white_bg" id="search_movil">
+            <div class="container margin_60">
+                <div>
+                    <div class="">
+                        <div class="tab-pane fade active show" id="tours">
+                            <form>
+                                <div class="row no-gutters custom-search-input-2">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Where..." data-lang="where">
+                                            <i class="icon_pin_alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <input class="form-control date-pick" type="text" name="dates" placeholder="When.." data-lang="when" >
+                                            <i class="icon_calendar"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="panel-dropdown">
+                                            <a href="#" data-lang="guest" >Guests <span class="qtyTotal tours">2</span></a>
+                                            <div class="panel-dropdown-content">
+                                                <!-- Quantity Buttons -->
+                                                <div class="qtyButtons tours">
+                                                    <label data-lang="adult">Adults</label>
+                                                    <div class="qtyDec tours"></div><input type="text" name="qtyInput_tours" value="1">
+                                                    <div class="qtyInc tours"></div>
+                                                </div>
+                                                <div class="qtyButtons tours">
+                                                    <label data-lang="children">Childrens</label>
+                                                    <div class="qtyDec tours"></div><input type="text" name="qtyInput_tours" value="0">
+                                                    <div class="qtyInc tours"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <input type="submit" class="btn_search" data-lang="search" value="Search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container margin_60">
+            <div class="main_title">
+                <h2 data-lang="recenttour">Recent Tours</h2>
+                <p data-lang="exploretour">Explore the most recent tours.</p>
+            </div>
+
+
+            <div class="row" id="listTours">
+                <!-- LIST TOURS -->
+            </div>
+            <!-- End row -->
+
+
+            <p class="text-center add_bottom_30">
+                <a href="all_tours_list.html" data-lang="viewtour" class="btn_1 medium"><i class="icon-eye-7"></i>View all tours (144) </a>
+            </p>
+
+            <hr>
+
+            <div class="main_title">
+                <h2 data-lang="unmidestination" >Unmissable destinations</h2>
+                <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="tour_container">
+                        <!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                        <div class="img_container">
+                            <a href="single_tour.html">
+                                <img src="img/peru-slider-1.jpg" width="800" height="533" class="img-fluid big-picture" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>52</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Machu Picchu</strong> tour</h3>
+                            <div class="rating">
+                                <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i><small>(75)</small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <div class="tour_container">
+                                <!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                                <div class="img_container">
+                                    <a href="single_tour.html">
+                                        <img src="img/iceland-tour.jpeg" width="800" height="533" class="img-fluid" alt="image">
+                                        <div class="short_info">
+                                            <i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>39</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tour_title">
+                                    <h3><strong>Iceland</strong> tour</h3>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i><small>(75)</small>
+                                    </div>
+                                    <!-- end rating -->
+                                    <div class="wishlist">
+                                        <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                                    </div>
+                                    <!-- End wish list-->
+                                </div>
+                            </div>
+                            <!-- End box tour -->
+                        </div>
+                        <!-- End col -->
+
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="tour_container">
+                                <!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                                <div class="img_container">
+                                    <a href="single_tour.html">
+                                        <img src="img/ica-dessert.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                        <div class="short_info">
+                                            <i class="icon_set_1_icon-27"></i>Driving Tour<span class="price"><sup>$</sup>45</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tour_title">
+                                    <h3><strong>Icca desert</strong> tour</h3>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i><small>(75)</small>
+                                    </div>
+                                    <!-- end rating -->
+                                    <div class="wishlist">
+                                        <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                                    </div>
+                                    <!-- End wish list-->
+                                </div>
+                            </div>
+                            <!-- End box tour -->
+                        </div>
+                        <!-- End col -->
+
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="tour_container">
+                                <!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                                <div class="img_container">
+                                    <a href="single_tour.html">
+                                        <img src="img/singapur.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                        <div class="badge_save">Save<strong>30%</strong></div>
+                                        <div class="short_info">
+                                            <i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>48</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tour_title">
+                                    <h3><strong>Singapore</strong> tour</h3>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i><small>(75)</small>
+                                    </div>
+                                    <!-- end rating -->
+                                    <div class="wishlist">
+                                        <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                                    </div>
+                                    <!-- End wish list-->
+                                </div>
+                            </div>
+                            <!-- End box tour -->
+                        </div>
+                        <!-- End col -->
+
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="tour_container">
+                                <!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                                <div class="img_container">
+                                    <a href="single_tour.html">
+                                        <img src="img/huasteca-potosina.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                        <div class="badge_save">Save<strong>20%</strong></div>
+                                        <div class="short_info">
+                                            <i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>36</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tour_title">
+                                    <h3><strong>Huasteca Potosina</strong></h3>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i><small>(75)</small>
+                                    </div>
+                                    <!-- end rating -->
+                                    <div class="wishlist">
+                                        <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                                    </div>
+                                    <!-- End wish list-->
+                                </div>
+                            </div>
+                            <!-- End box tour -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+
+            <p class="text-center nopadding">
+                <a href="all_tours_list.html" class="btn_1 medium"><i class="icon-eye-7"></i>View all tours (70) </a>
+            </p>
+            <hr>
+
+
+
+            <div class="main_title">
+                <h2 data-lang="populartour">Popular Tours</h2>
+                <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+            </div>
+
+            <div class="row" id="popular_tours_view">
+                <!-- POPULAR TOURS VIEW -->
+            </div>
+            <!-- End POPULAR row -->
+
+
+
+            <p class="text-center nopadding">
+                <a href="all_tours_list.html" data-lang="viewtour" class="btn_1 medium"><i class="icon-eye-7"></i>View all tours (70) </a>
+            </p>
+
+        </div>
+        <!-- End container -->
+        <section class="promo_full">
+            <div class="promo_full_wp magnific">
+                <div>
+                    <h3 data-lang="welove">We love<br data-lang="exploreworld">to explore the world!</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=jKJ64GMeQf0" class="video"><i class="icon-play-circled2-1"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+
+        <div class="white_bg">
+            <div class="container margin_60">
+                <div class="main_title">
+                    <h2 data-lang="tourcategory">Tour Categories</h2>
+                    <p>
+                        Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+                    </p>
+                </div>
+
+
+
+                <div class="owl-carousel owl-theme list_carousel add_bottom_30" id="category_carousel">
+
+
+                    <!-- <script>
+                        const categories = 'https://api-rest.selftour.travel/categories';
+                        fetch(categories)
+                            .then((res) => res.json())
+                            .then((res) => {
+                                console.log(res.categories.data.length);
+                                let catLength = res.categories.data.length;
+                                for (i = 0; i < catLength; i++) {
+
+                                    document.getElementById('category_carousel').innerHTML +=
+                                        `<div class="item">
+                                        <div class="tour_container">
+                                            <div class="img_container">
+                                                <a href="all_tours_list.html">
+                                                    <img src="img/adventure-category.jpg" width="200px" height="533" class="img-fluid" alt="image">
+                                                    <div>
+                                                        <div class="short_info category-info">
+                                                            <div class="category-title">Adventure</div>
+                                                            34 tours
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>`
+                                    console.log(i)
+                                }
+                            })
+                    </script> -->
+
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="all_tours_list.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Adventure</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="all_tours_list.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Adventure</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="all_tours_list.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Negrita</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="all_tours_list.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Adventure</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="all_tours_list.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Adventure</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- /carousel -->
+            </div>
+        </div>
+        <!-- End white_bg -->
+
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/laptop-selftour.png" alt="Laptop" class="img-fluid laptop">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="get-started" data-lang="getstart">Get started with <span>selftour.</span></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+                    </p>
+                    <ul class="list_order">
+                        <li data-lang="select"><span>1</span>Select your preferred tours</li>
+                        <li data-lang="purchase"><span>2</span>Purchase tickets and options</li>
+                        <li data-lang="pick"><span>3</span>Pick them directly from your office</li>
+                    </ul>
+                    <a href="all_tour_list.html" data-lang="startnow" class="btn_1 blue">Start now</a>
+                </div>
+            </div>
+            <!-- End row -->
+
+        </div>
+        <!-- End container -->
+    </main>
+    <!-- End main -->
+
+    <footer class="revealed">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 data-lang="needhelp">Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
+                    <a href="mailto:help@citytours.com" id="email_footer">help@citytours.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang="about">About</h3>
+                    <ul>
+                        <li><a href="#" data-lang="aboutus">About us</a></li>
+                        <li><a href="#" data-lang="faq">FAQ</a></li>
+                        <li><a href="#" data-lang="login">Login</a></li>
+                        <li><a href="#" data-lang="register">Register</a></li>
+                        <li><a href="#" data-lang="term">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang="discover">Discover</h3>
+                    <ul>
+                        <li><a href="#" data-lang="comunity">Community blog</a></li>
+                        <li><a href="#" data-lang="tourguide">Tour guide</a></li>
+                        <li><a href="#" data-lang="wishlist">Wishlist</a></li>
+                        <li><a href="#" data-lang="gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>selftour.app</h3>
+                    <ul class="app-stores">
+                        <li>
+                            <a href="#"><img class="" alt="Disponible en Google Play" data-src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/google-play-badge-es-MX.svg" src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/google-play-badge-es-MX.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="" alt="Descargar en la App Store" data-src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/app-store-badge-es-MX.svg" src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/app-store-badge-es-MX.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                        </ul>
+                        <!-- <p>© selftour 2019</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </footer>
+    <!-- End footer -->
+
+    <div id="toTop"></div>
+    <!-- Back to top button -->
+
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get" action="all_tours_list.html">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+        </form>
+    </div>
+    <!-- End Search Menu -->
+
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+            <h3>Sign In</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <div id="sign_in_form">
+                    <a href="#0" data-lang="loginfacebook" class="social_bt facebook">Login with Facebook</a>
+                    <a href="#0" data-lang="logingoogle" class="social_bt google">Login with Google</a>
+                    <div data-lang="or" class="divider"><span>Or</span></div>
+                    <div class="form-group">
+                        <label data-lang="email">Email</label>
+                        <input type="email" class="form-control" data-lang="email" name="email" id="email">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="password">Password</label>
+                        <input type="password" data-lang="password" class="form-control" name="password" id="password" value="">
+                        <i class="icon_lock_alt"></i>
+                    </div>
+                    <div class="clearfix add_bottom_15">
+                        <div class="checkboxes float-left">
+                            <input id="remember-me" type="checkbox" name="check">
+                            <label for="remember-me" data-lang="remember">Remember Me</label>
+                        </div>
+                        <div class="float-right"><a id="forgot" href="javascript:void(0);" data-lang="forgot" >Forgot Password?</a></div>
+                    </div>
+                    <div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
+                </div>
+                <div class="text-center" id="signup_link" data-lang="noaccount">
+                    Don’t have an account? <a href="javascript:void(0);" id="create_account" data-lang="signup" >Sign up</a>
+                </div>
+                <div class="text-center" id="login_link" data-lang="haveaccount">
+                    Already have a Selftour account? <a href="javascript:void(0);" id="login_button" data-lang="login">Log in</a>
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label data-lang="confirmlogin">Please confirm login email below</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p data-lang="linkemail">You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+                    <div class="text-center"><input type="submit" data-lang="resetpass" value="Reset Password" class="btn_1"></div>
+                </div>
+                <div id="create_account_form">
+                    <div class="form-group">
+                        <label data-lang="email">Email</label>
+                        <input type="email" class="form-control" name="account_email" id="account_email">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="firstname">First Name</label>
+                        <input type="text" class="form-control" name="account_first_name" id="account_first_name">
+                        <i class="icon_profile icon_profile_icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="lastname">Last Name</label>
+                        <input type="text" class="form-control" name="account_last_name" id="account_last_name">
+                        <i class="icon_profile icon_profile_icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="createpassword">Create a Password</label>
+                        <input type="text" class="form-control" name="account_password" id="account_password">
+                        <i class="icon_lock_alt"></i>
+                    </div>
+                    <div class="text-center"><input type="submit" data-lang="signup" value="Sign up" class="btn_signup"></div>
+                </div>
+            </div>
+        </form>
+        <!--form -->
+    </div>
+    <!-- /Sign In Popup -->
+
+    <!-- Common scripts -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js?v=1.3"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script type="text/javascript" src="rev-slider-files/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript">
+        var tpj = jQuery;
+        var revapi64;
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_64_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_64_1");
+            } else {
+                revapi64 = tpj("#rev_slider_64_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "rev-slider-files/js/",
+                    sliderLayout: "fullwidth",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        onHoverStop: "off",
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1240, 1024, 778, 480],
+                    gridheight: [600, 500, 400, 380],
+                    lazyType: "none",
+                    parallax: {
+                        type: "scroll",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 47, 48, 49, 50, 51, 55],
+                    },
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        }); /*ready*/
+    </script>
+
+    <script src="js/index.js"></script>
+    <script src="js/notify_func.js"></script>
+    <script>
+        $('input.date-pick').datepicker();
+    </script>
+
+</body>
+
+</html>

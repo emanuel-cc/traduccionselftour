@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Selftour - One road with endless experiences.">
+    <meta name="author" content="Selftour - Walk, Cycle & Drive">
+    <title>Selftour - Walk, Cycle & Drive</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Selftour">
+    <meta name="application-name" content="Selftour">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/fonts/selftour-fonts.css" rel="stylesheet">
+    <link href="css/custom.css?v=1.2766" rel="stylesheet">
+    <link href="css/wizard.css?v=1.26" rel="stylesheet">
+    <link href="css/wizard-animations.css?v=1.1" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        div output div img,
+        #margin-img {
+            border-width: 2px;
+            border-color: #a2a3a5;
+            border-style: dashed;
+            padding: 3px;
+            margin: 5px 0;
+            width: 100%;
+            height: 85%;
+        }
+        
+        div output div {
+            position: relative;
+        }
+        
+        div output div i,
+        .id-img-site {
+            color: rgb(247, 62, 62);
+            background-color: white;
+            position: absolute;
+            top: 5%;
+            left: 85%;
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        div output div i:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" ></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body load="inicializar()">
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <!-- Header Plain:  add the id plain to header and change logo.png to logo_sticky.png ======================= -->
+    <header id="plain" style="border-bottom:1px solid #ddd;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="index.html" title="Selftour - Walk, Cycle & Drive">Selftour - Walk, Cycle & Drive</a></h1>
+                    </div>
+                </div>
+                <nav class="col-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/selftour-logo-azul.png" height="45" alt="City tours" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="megamenu submenu">
+                                <a data-lang="shareexperience" href="tourlover-registration-form.html">									
+									Share your experiences
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link_1" data-lang="signup">									
+									Sign Up
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link" data-lang="login">									
+									Log In									
+								</a>
+                            </li>
+                            <li class="megamenu submenu" id="language-menu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">
+                                    <i class="icon_globe-2"></i>EN
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <div class="menu-wrapper" style="text-align: left;">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="about.html" id="translate2" data-text="Español" data-file="es" data-index="0"><strong>Español</strong> México</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> España</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> Argentina</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="contact_us_1.html" id="translate" data-text="English" data-file="en" data-index="1"><strong>English</strong> United States</a></li>
+                                                <li><a href="contact_us_2.html"><strong>English</strong> Canada</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate3" data-text="Français" data-file="fr" data-index="2"><strong>Français</strong> France</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate4" data-text="China" data-file="zh" data-index="3"><strong>China</strong> Chinnese</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End row -->
+                                </div>
+                                <!-- End menu-wrapper -->
+                            </li>
+                            <li class="submenu" id="currency-menu">
+                                <a href="javascript:void(0);" class="show-submenu">
+                                    <i class="icon_currency"></i> USD
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <ul style="text-align: left;">
+                                    <li><a href="all_restaurants_list.html"><strong>USD</strong> US Dollar</a></li>
+                                    <li><a href="all_restaurants_grid.html"><strong>MXN</strong> Mexican Peso</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu -->
+                </nav>
+            </div>
+        </div>
+        <!-- container -->
+        <!-- <div class="container-fluid" style="border-top: 1px solid #ededed;">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="filter_container">
+						<ul class="filter_options">
+							<li class="option">
+								<a href="">Opcion 1</a>
+							</li>
+							<li class="option">
+								<a href="">Opcion 1</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>		 -->
+    </header>
+    <!-- End Header -->
+
+    <div class="container-fluid full-height" id="main_container">
+        <div class="row row-height">
+            <div class="col-lg-7 content-left" id="wizard_container">
+                <div class="wizard-content">
+
+                    <!-- Paso 1 - Bienvenida -->
+                    <div class="wizard-step" id="step1">
+                        <h1 data-lang="welcome">¡Welcome!</h1>
+                        <p data-lang="weexcited">We are excited to learn more about the experience you would like to share at Selftour.</p>
+                        <p data-lang="fewminutes">In a few minutes you will start creating the page of your experience. Then, you will send it to us for Selftour staff to review.</p>
+                        <button class="next-step" onclick="nextStep('step1','step2',1)" data-lang="continue">Continue</button>
+                    </div>
+
+                    <!-- Paso 2 - Procedimiento -->
+                    <div class="wizard-step" id="step2" style="display: none;">
+                        <h1 data-lang="generaldescription">This is the general description of the process.</h1>
+                        <ul class="list_order">
+                            <li data-lang="select"><span>1</span>Select your preferred tours</li>
+                            <li data-lang="purchase"><span>2</span>Purchase tickets and options</li>
+                            <li data-lang="pick"><span>3</span>Pick them directly from your office</li>
+                        </ul>
+                        <button class="next-step" onclick="nextStep('step2','step4',2)" data-lang="continue">Continue</button>
+                    </div>
+
+                    <!-- Paso 3 - Inicio de Sesion -->
+                    <div class="wizard-step" id="step3" style="display: none;">
+                        <h1 data-lang="login">Log In</h1>
+                        <div class="signup-step">
+                            <div class="loggedin-account" id="loggedin-account">
+                                <img class="rounded-circle" src="https://a0.muscache.com/im/pictures/user/83152388-5b15-4952-9696-02d77de3868f.jpg?aki_policy=profile_x_medium" height="150" width="150" alt="Francisco" title="Francisco">
+                                <h3 data-lang="logged">You are logged in as Francisco Vázquez</h3>
+                                <button class="next-step" style="margin-bottom: 10px;" onclick="nextStep('step3','step4',3)">Continue</button><br>
+                                <a href="javascript:showLoginForm()" data-lang="useaccount">Use another account</a>
+                            </div>
+                            <div id="sign_in_form_wizard">
+                                <a href="#0" class="social_bt facebook" data-lang="loginfacebook">Login with Facebook</a>
+                                <a href="" class="social_bt google" data-lang="logingoogle">Login with Google</a>
+                                <div class="divider" data-lang="or"><span>Or</span></div>
+                                <form id="loginForm-System">
+                                    <div class="form-group">
+                                        <label data-lang="email">Email</label>
+                                        <input type="email" class="form-control" name="userField" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label data-lang="password">Password</label>
+                                        <div class="hideShowPassword-wrapper" style="position: relative; display: block; vertical-align: baseline; margin: 0px;">
+                                            <input type="password" class="form-control hideShowPassword-field" name="passField" id="password" value="" style="margin: 0px; padding-right: 0px;">
+                                            <button data-lang="show" type="button" role="button" aria-label="Show Password" title="Show Password" tabindex="0" class="my-toggle hideShowPassword-toggle-show" aria-pressed="false" style="position: absolute; right: 0px; top: 50%; margin-top: -15px; display: block;">
+                                            Show
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix add_bottom_15">
+                                        <div class="float-right"><a href="javascript:showForgetPasswordForm();" data-lang="forgot">Forgot Password?</a></div>
+                                    </div>
+                                    <div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
+                                </form>
+                            </div>
+                            <div id="login_nav_buttons">
+                                <a href="javascript:goBack();" id="go_back_wizard" data-lang="goback">
+                                    <div class="fs1" aria-hidden="true" data-icon="4"></div>
+                                    Go back
+                                </a>
+                                <div id="login_nav_options">
+                                    <div class="text-right" id="signup_link_wizard" data-lang="noaccount">
+                                        Don’t have an account? <a href="javascript:showSignUpForm();" id="create_account_wizard" data-lang="signup"> Sign up</a>
+                                    </div>
+                                    <div class="text-right" id="login_link_wizard" data-lang="haveaccount">
+                                        Already have a Selftour account? <a href="javascript:showLoginForm();" id="login_button_wizard" data-lang="login"> Log in</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="forgot_pw_wizard">
+                                <div class="form-group">
+                                    <label data-lang="confirmlogin">Please confirm login email below</label>
+                                    <input type="email" class="form-control" name="email_forgot" id="email_forgot_wizard">
+                                </div>
+                                <p data-lang="linkemail">You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+                                <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                            </div>
+                            <div id="create_account_form_wizard">
+                                <div class="form-group">
+                                    <label data-lang="email">Email</label>
+                                    <input type="email" class="form-control" name="account_email" id="account_email_wizard">
+                                </div>
+                                <div class="form-group">
+                                    <label data-lang="firstname">First Name</label>
+                                    <input type="text" class="form-control" name="account_first_name" id="account_first_name_wizard">
+                                </div>
+                                <div class="form-group">
+                                    <label data-lang="lastname">Last Name</label>
+                                    <input type="text" class="form-control" name="account_last_name" id="account_last_name_wizard">
+                                </div>
+                                <div class="form-group">
+                                    <label data-lang="createpassword">Create a Password</label>
+                                    <input type="text" class="form-control" name="account_password" id="account_password_wizard">
+                                </div>
+                                <div class="text-center"><input type="submit" value="Sign up" class="btn_signup" data-lang="signup"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso 4 - Datos Generales -->
+                    <div class="wizard-step" id="step4" style="display: none;">
+                        <h1 data-lang="tellabout">Tell us about your tour</h1>
+                        <form id="form-createtour" class="p-2">
+
+                            <div class="form-group">
+                                <label data-lang="tourname">Tour Name </label><a class="tooltip-1" data-placement="right" title data-original-title="Type name tour experience"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                <input type="text" class="form-control" name="title" id="title">
+                            </div>
+
+                            <div class="form-group">
+                                <label data-lang="shortdescr">Short Description</label><a class="tooltip-1" data-placement="right" title data-original-title="Describe the tour"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                <textarea class="form-control form-control-sm" name="description" id="description_short" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label data-lang="fulldescr">Full Description</label><a class="tooltip-1" data-placement="right" title data-original-title="Describe the tour"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                <textarea class="form-control form-control-sm" name="description_short" id="description" rows="5"></textarea>
+                            </div>
+
+                            <!-- MAIN ACTIVITY, CATEGORY -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label data-lang="mainactivity">Main Activity</label><a class="tooltip-1" data-placement="right" title data-original-title="Choose if you walk, drive or cycle all the tour"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control form-control-sm browser-default custom-select" name="cmbmainactivity">
+                                            <option data-lang="selectactivity">Select Activity</option>
+                                            <option data-lang="walk">Walk</option>
+                                            <option data-lang="drive">Drive</option>
+                                            <option data-lang="cycle">Cycle</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label data-lang="category">Category</label><a class="tooltip-1" data-placement="right" title data-original-title="Choose a category about the TOUR"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control form-control-sm browser-default custom-select" name="idcategory" id="categoryTour"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- DIFFICULT AND DURATION -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label data-lang="difficulty">Difficulty</label><a class="tooltip-1" data-placement="right" title data-original-title="Select TOUR dificult"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control form-control-sm browser-default custom-select" name="difficulty">
+                                            <option data-lang="selectdiff">Select Difficult</option>
+                                            <option data-lang="easy">Easy</option>
+                                            <option data-lang="moderate">Moderate</option>
+                                            <option data-lang="hard">Hard</option>
+                                            <option data-lang="verydifficult">Very Difficult</option>
+                                            <option data-lang="expert">Expert</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label data-lang="duration">Duration</label><a class="tooltip-1" data-placement="right" title data-original-title="Select the TOUR duration"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control form-control-sm browser-default custom-select" id="timeTour" name="duration"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AVAILABLE DAYS -->
+                            <div class="row mb-4">
+                                <div class="col-md-12"><label class="d-flex justify-content-center" data-lang="availableD">Available days</label></div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2 form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="allday" id="check_all" onclick="checkAll()">
+                                        <label class="form-check-label" data-lang="allday">All days</label>
+                                    </div>
+                                    <div class="col-md-3 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="monday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="monday">Monday</label>
+                                    </div>
+                                    <div class="col-md-3 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="tuesday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="tuesday">Tuesday</label>
+                                    </div>
+                                    <div class="col-md-2 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="wednesday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="wednesday">Wednesday</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="thursday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="thursday">Thursday</label>
+                                    </div>
+                                    <div class="col-md-3 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="friday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="friday">Friday</label>
+                                    </div>
+                                    <div class="col-md-3 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="saturday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="saturday">Saturday</label>
+                                    </div>
+                                    <div class="col-md-2 form-check form-check-inline">
+                                        <input class="form-check-input" name="days_enable" type="checkbox" value="sunday" onchange="CheckDay(this)">
+                                        <label class="form-check-label" data-lang="sunday">Sunday</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- RECOMMEND START AND APROX -->
+                            <div class="row my-4">
+                                <div class="col-md-3">
+                                    <label data-lang="recomendtour">Recommended tour start</label>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-end">
+                                    <input class="form-control" type="time" name="recommend_begin" id="" value="08:00">
+                                </div>
+                                <div class="col-md-3">
+                                    <label data-lang="aproxtour">Aproximate tour's duration: </label>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-end">
+                                    <select class="form-control form-control-sm browser-default custom-select" name="approx_duration" id="time_aprox">
+                                        <script>
+                                            for ( i = 0; i < 24; i++) {
+                                                var select = document.getElementById('time_aprox');
+                                                select.innerHTML += `<option>${i+1} hrs</option>`
+                                            }
+                                        </script>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- COUNTRY, STATE, CITY -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label data-lang="country">Country</label><a class="tooltip-1" data-placement="right" title data-original-title="Select the country where the TOUR begins"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control browser-default custom-select" id="selectcountry" name="idcountry"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label data-lang="state">State or Region</label><a class="tooltip-1" data-placement="right" title data-original-title="Select the City or Region TOUR"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control browser-default custom-select" id="selectstate" name="idstate"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label data-lang="city">City</label><a class="tooltip-1" data-placement="right" title data-original-title="Insert the city TOUR"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <!-- <select class="form-control browser-default custom-select" name="cmbcity"></select> -->
+                                        <input type="text" class="form-control" name="idcity" id="idcity">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CLASIFICACION, TEMPORADA -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label data-lang="appropriate">Appropriate to</label><a class="tooltip-1" data-placement="right" title data-original-title="Select classification tour"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                        <select class="form-control browser-default custom-select" id="idclasificacion" name="idcountry">
+                                            <option value="" data-lang="family">Family</option>
+                                            <option value="" data-lang="adult">Adults</option>
+                                            <option value="" data-lang="children">Childrens</option>
+                                            <option value="" data-lang="adolescent">Adolecents</option>
+                                            <option value="" data-lang="general">General</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-8" id="seleccionarperiodo">
+                                    <div class="row">
+                                        <div class="form-group col-md-12" id="periodTour">
+                                            <label data-lang="season">Season</label><a class="tooltip-1" data-placement="right" title data-original-title="Select when the tour will be available"><i style="color: #89b5fd;" class="icon-help-circled"></i></a>
+                                            <select class="form-control browser-default custom-select" id="idseason" name="idseason">
+                                                <option value="" data-lang="year">Year</option>
+                                                <option value="" data-lang="spring">Spring</option>
+                                                <option value="" data-lang="summer">Summer</option>
+                                                <option value="" data-lang="fall">Fall</option>
+                                                <option value="" data-lang="winter">Winter</option>
+                                                <option value="" data-lang="personalized">Personalized</option>
+                                            </select>
+                                        </div>
+                                        <div><input id="insertBegin" type="hidden" name="beginPeriod" value="0000-01-01"></div>
+                                        <div><input id="insertEnd" type="hidden" name="endPeriod" value="0000-12-31"></div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Periodo</label>
+                                        <input type="date" class="form-control" name="idperiodo" id="periodo" onchange="handler(event);">
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!-- RESTICTIONS -->
+                            <div class="col-md-12">
+                                <div class="col-md-12 p-2 d-flex justify-content-center">Restrictions</div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label data-lang="babys">Babys</label>
+                                        <div class="radio">
+                                            <label><input type="radio" name="babys" value="1" data-lang="yes" checked> Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="babys" data-lang="not" value="0"> Not</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label data-lang="pets">Pets</label>
+                                        <div class="radio">
+                                            <label><input type="radio" name="pets" value="1" data-lang="yes" checked> Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="pets" data-lang="not" value="0"> Not</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label data-lang="children">Childrens</label>
+                                        <div class="radio">
+                                            <label><input type="radio" name="childrens" value="1" data-lang="yes" checked> Yes</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="childrens" data-lang="not" value="0"> Not</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--onclick="nextStep('step4','step5',4)"-->
+                            <!-- <button class="next-step justify-content-md-center mb-3" type="submit" style="float: right;" onclick="nextStep('step4','step5',4)" id="step4">Continue</button> -->
+                            <button class="next-step justify-content-md-center mb-3" type="submit" style="float: right;" onclick="checkData()" id="step4">Continue</button>
+                        </form>
+                    </div>
+
+                    <!-- Paso 5 - Mapa -->
+                    <div class="wizard-step" id="step5" style="display: none;">
+                        <h1 id="step5_header" data-lang="traceroute">Let's trace the route!</h1>
+                        <div id="sitemap_form">
+                            <div class="form-group" id="searchbox_map">
+                                <label data-lang="sitename">Site Name</label>
+                                <input type="text" class="form-control" id="site_to_search" onfocus="this.value = ''">
+                            </div>
+                        </div>
+                        <h3 data-lang="sites">Sites
+                            <i class="pl-1 pe-7s-graph1 tooltip-1" data-placement="top" title data-original-title="Trace route" id="trace_the_route"></i>
+                            <i class="pl-1 icon-floppy-1 tooltip-1" data-placement="top" title data-original-title="Save sites" id="save_sites" style="display: none; float: right; color: #00c7fc;"></i>
+                        </h3>
+                        <div class="tour-item-container" id="sites_tour">
+
+                            <!-- HERE GO THE LIST SITES -->
+
+                            </form>
+                        </div>
+                        <button class="next-step" style="float: right; display: none;" id="go2Step5" onclick="nextStep('step5','step5',5)" data-lang="continue">Continue</button>
+                        <button class="next-step" style="float: right; display: none;" id="btnRevision" onclick="nextStep('step5','step6',6)" data-lang="finish">Finish</button>
+                    </div>
+                    <div class="wizard-step" id="step6" style="display: none;">
+                        <!-- <img src="" alt="" class="final-step-images">
+                        <img src="" alt="" class="final-step-images">
+                        <img src="" alt="" class="final-step-images">
+                        <img src="" alt="" class="final-step-images">
+                        <img src="" alt="" class="final-step-images"> -->
+                        <div class="message-container">
+                            <h1 data-lang="congratulation">Congratulations!!!</h1>
+                            <h2 data-lang="thankyou">Thank you for sharing your experience.</h2>
+                            <h3 data-lang="teamreview">Our team will review all the information and you will receive news from us shortly.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard-stepback" style="display: none;">
+                    <div class="fs1" aria-hidden="true" data-icon="4"></div>
+                    <a href="javascript:prevStep()" data-lang="goback">                         
+                        Go back
+                    </a>
+                </div>
+                <div id="wizard-statusbar"></div>
+            </div>
+            <!-- end col-->
+
+            <div class="col-lg-5 map-right" id="images_container">
+                <div class="wizard-images">
+                    <div class="img-step-1"></div>
+                    <div class="img-step-2" style="display: none;"></div>
+                    <div class="img-step-3" style="display: none;"></div>
+                    <div class="img-step-4" style="display: none;"></div>
+                    <div class="img-step-5" id="map" style="display: none;">
+                    </div>
+
+                    <!-- Paso 6 - Descripcion de cada sitio -->
+                    <div class="img-step-6" id="site-form" style="display: none;">
+
+                        <form class="col-md-12" id="formsavesite" enctype="multipart/form-data">
+                            <div id="sites-tosave">
+                                <!-- HERE GO THE SITES TO ADD DESCRIPTION AND GALLERY -->
+                            </div>
+                            <!-- <div class="d-flex justify-content-end pb-2">
+                                <button type="submit" id="btn-savedesc-gal" class="next-step btn-sm ml-3">Save site</button>
+                            </div> -->
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End row-->
+    </div>
+    <!-- End container-fluid -->
+
+    <footer class="revealed d-none ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h3 data-lang="needhelp">Need help?</h3>
+                    <a href="tel://004542344599 " id="phone ">+45 423 445 99</a>
+                    <a href="mailto:help@citytours.com " id="email_footer ">help@citytours.com</a>
+                </div>
+                <div class="col-md-3 ">
+                    <h3 data-lang="about">About</h3>
+                    <ul>
+                        <li><a href="# " data-lang="aboutus">About us</a></li>
+                        <li><a href="# " data-lang="faq">FAQ</a></li>
+                        <li><a href="# " data-lang="login">Login</a></li>
+                        <li><a href="# " data-lang="register">Register</a></li>
+                        <li><a href="# " data-lang="term">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h3 data-lang="discover">Discover</h3>
+                    <ul>
+                        <li><a href="# " data-lang="comunity">Community blog</a></li>
+                        <li><a href="# " data-lang="tourguide">Tour guide</a></li>
+                        <li><a href="# " data-lang="wishlist">Wishlist</a></li>
+                        <li><a href="# " data-lang="gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3 data-lang="setting">Settings</h3>
+                    <div class="styled-select ">
+                        <select name="lang " id="lang ">
+                            <option value="English " data-lang="english" selected>English</option>
+                            <option value="French " data-lang="french">French</option>
+                            <option value="Spanish " data-lang="spanish">Spanish</option>
+                            <option value="Russian " data-lang="russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="styled-select ">
+                        <select name="currency " id="currency ">
+                            <option value="USD " selected>USD</option>
+                            <option value="EUR ">EUR</option>
+                            <option value="GBP ">GBP</option>
+                            <option value="RUB ">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div id="social_footer ">
+                        <ul>
+                            <li><a href="# "><i class="icon-facebook "></i></a></li>
+                            <li><a href="# "><i class="icon-twitter "></i></a></li>
+                            <li><a href="# "><i class="icon-google "></i></a></li>
+                            <li><a href="# "><i class="icon-instagram "></i></a></li>
+                            <li><a href="# "><i class="icon-pinterest "></i></a></li>
+                            <li><a href="# "><i class="icon-vimeo "></i></a></li>
+                            <li><a href="# "><i class="icon-youtube-play "></i></a></li>
+                        </ul>
+                        <p>© Citytours 2018</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </footer>
+    <!-- End footer -->
+
+    <!-- Search Menu -->
+    <div class="search-overlay-menu ">
+        <span class="search-overlay-close "><i class="icon_set_1_icon-77 "></i></span>
+        <form role="search " id="searchform " method="get ">
+            <input value=" " name="q " type="search " placeholder="Search... " />
+            <button type="submit "><i class="icon_set_1_icon-78 "></i>
+			</button>
+        </form>
+    </div>
+    <!-- End Search Menu -->
+
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog " class="zoom-anim-dialog mfp-hide ">
+        <div class="small-dialog-header ">
+            <h3>Sign In</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper ">
+                <div id="sign_in_form ">
+                    <a href="#0 " class="social_bt facebook " data-lang="loginfacebook">Login with Facebook</a>
+                    <a href="#0 " class="social_bt google " data-lang="logingoogle">Login with Google</a>
+                    <div class="divider " data-lang="or"><span>Or</span></div>
+                    <div class="form-group ">
+                        <label data-lang="email">Email</labe l>
+                        <input type="email " class="form-control " name="email " id="email ">
+                        <i class="icon_mail_alt "></i>
+                    </div>
+                    <div class="form-group ">
+                        <label data-lang="password">Password</label>
+                        <input type="password " class="form-control " name="password " id="password " value=" ">
+                        <i class="icon_lock_alt "></i>
+                    </div>
+                    <div class="clearfix add_bottom_15 ">
+                        <div class="checkboxes float-left ">
+                            <input id="remember-me " type="checkbox " name="check ">
+                            <label for="remember-me " data-lang="remember">Remember Me</label>
+                        </div>
+                        <div class="float-right "><a id="forgot " href="javascript:void(0); " data-lang="forgot">Forgot Password?</a></div>
+                    </div>
+                    <div class="text-center "><input type="submit " value="Log In " class="btn_login " data-lang="login"></div>
+                </div>
+                <div class="text-center " id="signup_link " data-lang="noaccount">
+                    Don’t have an account? <a href="javascript:void(0); " id="create_account " data-lang="signup">Sign up</a>
+                </div>
+                <div class="text-center " id="login_link " data-lang="haveaccount">
+                    Already have a Selftour account? <a href="javascript:void(0); " id="login_button " data-lang="login">Log in</a>
+                </div>
+                <div id="forgot_pw ">
+                    <div class="form-group ">
+                        <label data-lang="confirmlogin">Please confirm login email below</label>
+                        <input type="email " class="form-control " name="email_forgot " id="email_forgot ">
+                        <i class="icon_mail_alt "></i>
+                    </div>
+                    <p data-lang="linkemail">You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+                    <div class="text-center "><input type="submit " value="Reset Password " class="btn_1 "></div>
+                </div>
+                <div id="create_account_form ">
+                    <div class="form-group ">
+                        <label data-lang="email">Email</label>
+                        <input type="email " class="form-control " name="account_email " id="account_email ">
+                        <i class="icon_mail_alt "></i>
+                    </div>
+                    <div class="form-group ">
+                        <label data-lang="firstname">First Name</label>
+                        <input type="text " class="form-control " name="account_first_name " id="account_first_name ">
+                        <i class="icon_profile icon_profile_icon "></i>
+                    </div>
+                    <div class="form-group ">
+                        <label data-lang="lastname">Last Name</label>
+                        <input type="text " class="form-control " name="account_last_name " id="account_last_name ">
+                        <i class="icon_profile icon_profile_icon "></i>
+                    </div>
+                    <div class="form-group ">
+                        <label data-lang="createpassword">Create a Password</label>
+                        <input type="text " class="form-control " name="account_password " id="account_password ">
+                        <i class="icon_lock_alt "></i>
+                    </div>
+                    <div class="text-center "><input type="submit " value="Sign up " class="btn_signup " data-lang="signup"></div>
+                </div>
+            </div>
+        </form>
+        <!--form -->
+    </div>
+
+    <!-- /Sign In Popup -->
+
+    <!-- Common scripts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="js/jquery-2.2.4.min.js "></script>
+    <script src="js/common_scripts_min.js "></script>
+    <script src="js/functions.js?v=1.3 "></script>
+    <script src="js/wizard.js?v=1.9 "></script>
+    <!-- Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAw4woNIssZ0P5Lonws9W-9LTRHRCMyqc&libraries=places&callback=initMap " async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAAw4woNIssZ0P5Lonws9W-9LTRHRCMyqc "></script> -->
+    <!-- <script src="js/map_listing_tours.js "></script> -->
+    <script src="js/main.js "></script>
+    <!-- <script src="js/infobox.js "></script> -->
+    <script src="js/tours.js "></script>
+    <script src="js/img-site-preview.js?v=1.1 "></script>
+
+
+</body>
+
+</html>

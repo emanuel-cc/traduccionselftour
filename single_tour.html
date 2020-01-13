@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Selftour - One road with endless experiences.">
+    <meta name="author" content="Selftour - Walk, Cycle & Drive">
+
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Selftour">
+    <meta name="application-name" content="Selftour">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link href="css/fonts/selftour-fonts.css" rel="stylesheet">
+    <link href="css/custom.css?v=1.2792" rel="stylesheet">
+
+    <!-- SPECIFIC CSS - GRID GALLERY -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/finaltilesgallery.css" rel="stylesheet">
+    <link href="css/lightbox2.css" rel="stylesheet">
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link href="layerslider/css/layerslider.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" ></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body onload="DetailsTour()">
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <!-- Header================================================== -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="index.html" title="Selftour - Walk, Cycle & Drive">Selftour - Walk, Cycle & Drive</a></h1>
+                    </div>
+                </div>
+                <nav class="col-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/selftour-logo-azul.png" height="45" alt="City tours" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="megamenu submenu">
+                                <a data-lang="shareexperience" href="tourlover-registration-form.html">									
+									Share your experiences
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link_1" data-lang="signup">									
+									Sign Up
+								</a>
+                            </li>
+                            <li class="megamenu submenu">
+                                <a href="#sign-in-dialog" id="access_link" data-lang="login">									
+									Log In									
+								</a>
+                            </li>
+                            <li class="megamenu submenu" id="language-menu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">
+                                    <i class="icon_globe-2"></i>EN
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <div class="menu-wrapper" style="text-align: left;">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="about.html" id="translate2" data-text="Español" data-file="es" data-index="0"><strong>Español</strong> México</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> España</a></li>
+                                                <li><a href="about.html"><strong>Español</strong> Argentina</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="contact_us_1.html" id="translate" data-text="English" data-file="en" data-index="1"><strong>English</strong> United States</a></li>
+                                                <li><a href="contact_us_2.html"><strong>English</strong> Canada</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate3" data-text="Français" data-file="fr" data-index="2"><strong>Français</strong> France</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><a href="footer_2.html" id="translate4" data-text="China" data-file="zh" data-index="3"><strong>China</strong> Chinnese</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End row -->
+                                </div>
+                                <!-- End menu-wrapper -->
+                            </li>
+                            <li class="submenu" id="currency-menu">
+                                <a href="javascript:void(0);" class="show-submenu">
+                                    <i class="icon_currency"></i> USD
+                                    <i class="icon-down-open-mini"></i>
+                                </a>
+                                <ul style="text-align: left;">
+                                    <li><a href="all_restaurants_list.html"><strong>USD</strong> US Dollar</a></li>
+                                    <li><a href="all_restaurants_grid.html"><strong>MXN</strong> Mexican Peso</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu -->
+                </nav>
+            </div>
+        </div>
+        <!-- container -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Slider -->
+    <div id="full-slider-wrapper">
+        <div id="layerslider" style="width:100%;height:600px;">
+            <!-- first slide -->
+            <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
+                <img src="img/peru-slider-1.jpg" class="ls-bg" alt="Slide background">
+                <!-- <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">Affordable Paris Tours</h3>
+				<p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">City Tours / Tour Tickets / Tour Guides</p>
+				<a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href='all_tour_list.html'>Read more</a> -->
+            </div>
+
+            <!-- second slide -->
+            <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:85;">
+                <img src="img/peru-slider-2.png" class="ls-bg" alt="Slide background">
+                <!-- <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">More than 100 tours available</h3>
+				<p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Historic Buildings / Open Bus Tours / Museums Guides</p>
+				<a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href='all_tour_list.html'>Read more</a> -->
+            </div>
+
+            <!-- third slide -->
+            <div class="ls-slide" data-ls="slidedelay:5000; transition2d:103;">
+                <img src="img/peru-slider-3.png" class="ls-bg" alt="Slide background">
+                <!-- <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">Discover fantastic places</h3>
+				<p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">We offer a variety of services and options</p>
+				<a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href='all_tour_list.html'>Read more</a> -->
+            </div>
+            <!-- fourth slide -->
+            <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:14;">
+                <img src="img/peru-slider-4.jpg" class="ls-bg" alt="Slide background">
+                <!-- <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">CityTours provides tour guides</h3>
+				<p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Visit museum with a dedicated tour guide</p>
+				<a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href='all_tour_list.html'>Read more</a> -->
+            </div>
+            <!-- HERE GO FOOTER DATA SLIDER -->
+        </div>
+    </div>
+    <!-- End layerslider -->
+
+    <main>
+        <!-- <div id="position">
+			<div class="container">
+				<ul>
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#">Category</a>
+					</li>
+					<li>Page active</li>
+				</ul>
+			</div>
+		</div> -->
+        <!-- End Position -->
+
+        <div class="collapse" id="collapseMap">
+            <div id="map" class="map"></div>
+        </div>
+        <!-- End Map -->
+
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-lg-8" id="single_tour_desc">
+
+                    <div id="single_tour_feat">
+                        <ul>
+                            <li><i class="icon_set_1_icon-4"></i>Museum</li>
+                            <li><i class="icon_set_1_icon-83"></i>3 Hours</li>
+                            <li><i class="icon_set_1_icon-13"></i>Accessibiliy</li>
+                            <li><i class="icon_set_1_icon-82"></i>144 Likes</li>
+                            <li><i class="icon_set_1_icon-22"></i>Pet allowed</li>
+                            <li><i class="icon_set_1_icon-97"></i>Audio guide</li>
+                            <li><i class="icon_set_1_icon-29"></i>Tour guide</li>
+                        </ul>
+                    </div>
+
+                    <p class="d-none d-md-block d-block d-lg-none">
+                        <a class="btn_map btn_1" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map" data-lang="viewmap">View on map</a>
+                        <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="Buy Tour" style="margin-top: 5px;" data-lang="buytour">Buy Tour</a>
+                    </p>
+                    <!-- Map button for tablets/mobiles -->
+
+                    <div class="row" id="description_tour">
+                        <!-- DESCRIPTION AND RECOMMEND TOUR  -->
+                    </div>
+
+                    <hr>
+
+                    <div id="sites_tour">
+
+                        <!-- ==================================================================== -->
+
+                        <!-- <div class="row">
+                            <div class="col-lg-3">
+                                <h3>Machu Picchu</h3>
+                            </div>
+                            <div class="col-lg-9">
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p> -->
+                        <!-- <div id="gallery" class="final-tiles-gallery effect-dezoom effect-fade-out caption-top social-icons-right">
+                                    <div class="ftg-items">
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/machu-picchu-1.jpg">
+                                                <img class="item" src="img/gallery/machu-picchu-1.jpg" data-src="img/gallery/machu-picchu-1.jpg" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/machu-picchu-2.jpg">
+                                                <img class="item" src="img/gallery/machu-picchu-2-250.jpg" data-src="img/gallery/machu-picchu-2-250.jpg" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/machu-picchu-5.jpg">
+                                                <img class="item" src="img/gallery/machu-picchu-5-800.jpg" data-src="img/gallery/machu-picchu-5-800.jpg" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/machu-picchu-3.jpg">
+                                                <img class="item" src="img/gallery/machu-picchu-3.jpg" data-src="img/gallery/machu-picchu-3.jpg" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div> -->
+
+
+                        <!-- </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <h3>Rainbow Mountain</h3>
+                            </div>
+                            <div class="col-lg-9">
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate
+                                    an, labitur tibique te qui.
+                                </p> -->
+
+                        <!-- <div id="gallery" class="final-tiles-gallery effect-dezoom effect-fade-out caption-top social-icons-right">
+                                    <div class="ftg-items">
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/500x300/cccccc/ffffff&text=500x300" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/250x250/cccccc/ffffff&text=250x250" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/400x800/cccccc/ffffff&text=400x800" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/600x400/cccccc/ffffff&text=600x400" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/250x600/cccccc/ffffff&text=250x600" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/800x800/cccccc/ffffff&text=800x800" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/800x600/cccccc/ffffff&text=800x600" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/250x300/cccccc/ffffff&text=250x300" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                        <div class="tile">
+                                            <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="http://placehold.it/800x600/B52626/ffffff&text=1">
+                                                <img class="item" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="http://placehold.it/250x250/cccccc/ffffff&text=250x250" alt="Image">
+                                                <span class='title'>Lorem ipsum</span>
+                                                <span class='subtitle'>Pellentesque ornare ornare</span>
+                                            </a>
+                                            <div class="ftg-social">
+                                                <a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+                                                <a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        
+    
+                                    </div>
+                                </div> -->
+                        <!-- </div>
+                        </div> -->
+                        <!-- ==================================================================== -->
+                    </div>
+
+                    <hr>
+
+                    <!-- REVIEW AND COMMENTS -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3 data-lang="review">Reviews </h3>
+                            <a href="#" class="btn_1 add_bottom_30" data-toggle="modal" data-target="#myReview" data-lang="leave">Leave a review</a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div id="general_rating">11 Reviews
+                                <div class="rating">
+                                    <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                </div>
+                            </div>
+                            <!-- End general_rating -->
+                            <div class="row" id="rating_summary">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Position
+                                            <div class="rating">
+                                                <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                            </div>
+                                        </li>
+                                        <li>Tourist guide
+                                            <div class="rating">
+                                                <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Price
+                                            <div class="rating">
+                                                <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                            </div>
+                                        </li>
+                                        <li>Quality
+                                            <div class="rating">
+                                                <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End row -->
+                            <hr>
+                            <div id="review_comment">
+                                <!-- <div class="review_strip_single">
+                                    <img src="img/avatar1.jpg" alt="Image" class="rounded-circle">
+                                    <small> - 10 March 2015 -</small>
+                                    <h4>Jhon Doe</h4>
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                                    </p>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                    </div>
+                                </div> -->
+                                <!-- End review strip -->
+
+                                <!-- <div class="review_strip_single">
+                                    <img src="img/avatar3.jpg" alt="Image" class="rounded-circle">
+                                    <small> - 10 March 2015 -</small>
+                                    <h4>Jhon Doe</h4>
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                                    </p>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                    </div>
+                                </div> -->
+                                <!-- End review strip -->
+
+                                <!-- <div class="review_strip_single last">
+                                    <img src="img/avatar2.jpg" alt="Image" class="rounded-circle">
+                                    <small> - 10 March 2015 -</small>
+                                    <h4>Jhon Doe</h4>
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                                    </p>
+                                    <div class="rating">
+                                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- End review strip -->
+                        </div>
+                    </div>
+
+                </div>
+                <!--End  single_tour_desc-->
+
+                <aside class="col-lg-4">
+                    <p class="d-none d-xl-block d-lg-block d-xl-none d-flex">
+                        <a class="btn_map btn_1 btn_map_tour" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map" data-lang="viewmap">View on map</a>
+                        <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map" data-lang="buytour">Buy Tour</a>
+                    </p>
+
+                    <div class="box_style_1 expose" id="tour_maker_data">
+
+                    </div>
+
+                </aside>
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+
+        <div class="white_bg">
+            <div class="container margin_60">
+                <div class="main_title">
+                    <h2 data-lang="relatedtour">Related Tours</h2>
+                </div>
+                <div class="owl-carousel owl-theme list_carousel add_bottom_30">
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="single_tour.html">
+                                    <img src="img/adventure-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Adventure</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End box tour -->
+                    </div>
+                    <!-- /item -->
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="single_tour.html">
+                                    <img src="img/cycle-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Cycle</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End box tour -->
+                    </div>
+                    <!-- /item -->
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="single_tour.html">
+                                    <img src="img/relax-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Relax</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End box tour -->
+                    </div>
+                    <!-- /item -->
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="single_tour.html">
+                                    <img src="img/camping-category.jpg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Camping</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End box tour -->
+                    </div>
+                    <!-- /item -->
+                    <div class="item">
+                        <div class="tour_container">
+                            <div class="img_container">
+                                <a href="single_tour.html">
+                                    <img src="img/beach-category.jpeg" width="800" height="533" class="img-fluid" alt="image">
+                                    <div>
+                                        <div class="short_info category-info">
+                                            <div class="category-title">Beach Paradise</div>
+                                            34 tours
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End box tour -->
+                    </div>
+                    <!-- /item -->
+                </div>
+                <!-- /carousel -->
+            </div>
+        </div>
+        <!-- End white_bg -->
+
+        <div id="overlay"></div>
+        <!-- Mask on input focus -->
+
+    </main>
+    <!-- End main -->
+
+    <footer class="revealed">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 data-lang="needhelp">Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+45 423 445 99</a>
+                    <a href="mailto:help@citytours.com" id="email_footer">help@citytours.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang="about">About</h3>
+                    <ul>
+                        <li><a href="#" data-lang="aboutus">About us</a></li>
+                        <li><a href="#" data-lang="faq">FAQ</a></li>
+                        <li><a href="#" data-lang="login">Login</a></li>
+                        <li><a href="#" data-lang="register">Register</a></li>
+                        <li><a href="#" data-lang="term">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 data-lang="discover">Discover</h3>
+                    <ul>
+                        <li><a href="#" data-lang="comunity">Community blog</a></li>
+                        <li><a href="#" data-lang="tourguide">Tour guide</a></li>
+                        <li><a href="#" data-lang="wishlist">Wishlist</a></li>
+                        <li><a href="#" data-lang="gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>selftour.app</h3>
+                    <ul class="app-stores">
+                        <li>
+                            <a href="#"><img class="" alt="Disponible en Google Play" data-src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/google-play-badge-es-MX.svg" src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/google-play-badge-es-MX.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="" alt="Descargar en la App Store" data-src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/app-store-badge-es-MX.svg" src="https://cdn.getyourguide.com/assets/current/customer/desktop/cached/badges/app-store-badge-es-MX.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                        </ul>
+                        <!-- <p>© selftour 2019</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </footer>
+    <!-- End footer -->
+
+    <div id="toTop"></div>
+    <!-- Back to top button -->
+
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+        </form>
+    </div>
+    <!-- End Search Menu -->
+
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+            <h3 data-lang="signin">Sign In</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <div id="sign_in_form">
+                    <a href="#0" class="social_bt facebook" data-lang="loginfacebook">Login with Facebook</a>
+                    <a href="#0" class="social_bt google" data-lang="logingoogle">Login with Google</a>
+                    <div class="divider"><span>Or</span></div>
+                    <div class="form-group">
+                        <label data-lang="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" value="">
+                        <i class="icon_lock_alt"></i>
+                    </div>
+                    <div class="clearfix add_bottom_15">
+                        <div class="checkboxes float-left">
+                            <input id="remember-me" type="checkbox" name="check">
+                            <label for="remember-me" data-lang="remember">Remember Me</label>
+                        </div>
+                        <div class="float-right"><a id="forgot" href="javascript:void(0);" data-lang="forgot">Forgot Password?</a></div>
+                    </div>
+                    <div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
+                </div>
+                <div class="text-center" id="signup_link" data-lang="noaccount">
+                    Don’t have an account? <a href="javascript:void(0);" id="create_account" data-lang="signup">Sign up</a>
+                </div>
+                <div class="text-center" id="login_link" data-lang="haveaccount">
+                    Already have a Selftour account? <a href="javascript:void(0);" id="login_button" data-lang="login">Log in</a>
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label data-lang="confirmlogin">Please confirm login email below</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p data-lang="linkemail">You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+                    <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                </div>
+                <div id="create_account_form">
+                    <div class="form-group">
+                        <label data-lang="email">Email</label>
+                        <input type="email" class="form-control" name="account_email" id="account_email">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="firstname">First Name</label>
+                        <input type="text" class="form-control" name="account_first_name" id="account_first_name">
+                        <i class="icon_profile icon_profile_icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="lastname">Last Name</label>
+                        <input type="text" class="form-control" name="account_last_name" id="account_last_name">
+                        <i class="icon_profile icon_profile_icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <label data-lang="createpassword">Create a Password</label>
+                        <input type="text" class="form-control" name="account_password" id="account_password">
+                        <i class="icon_lock_alt"></i>
+                    </div>
+                    <div class="text-center"><input type="submit" value="Sign up" class="btn_signup" data-lang="signup"></div>
+                </div>
+            </div>
+        </form>
+        <!--form -->
+    </div>
+    <!-- /Sign In Popup -->
+
+    <!-- Modal Review -->
+    <div class="modal fade" id="myReview" tabindex="-1" role="dialog" aria-labelledby="myReviewLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myReviewLabel" data-lang="writereview">Write your review</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div id="message-review">
+                    </div>
+                    <form method="post" action="assets/review_tour.php" name="review_tour" id="review_tour">
+                        <input name="tour_name" id="tour_name" type="hidden" value="Paris Arch de Triomphe Tour">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="name_review" id="name_review" type="text" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="lastname_review" id="lastname_review" type="text" placeholder="Your last name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input name="email_review" id="email_review" type="email" placeholder="Your email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End row -->
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label data-lang="position">Position</label>
+                                    <select class="form-control" name="position_review" id="position_review">
+										<option value="" data-lang="pleasereview">Please review</option>
+										<option value="Low" data-lang="low">Low</option>
+										<option value="Sufficient" data-lang="sufficient">Sufficient</option>
+										<option value="Good" data-lang="good">Good</option>
+										<option value="Excellent" data-lang="excelent">Excellent</option>
+										<option value="Superb" data-lang="super">Super</option>
+										<option value="Not rated" data-lang="dontknow">I don't know</option>
+									</select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label data-lang="touristguide">Tourist guide</label>
+                                    <select class="form-control" name="guide_review" id="guide_review">
+										<option value="" data-lang="pleasereview">Please review</option>
+										<option value="Low" data-lang="low">Low</option>
+										<option value="Sufficient" data-lang="sufficient">Sufficient</option>
+										<option value="Good" data-lang="good">Good</option>
+										<option value="Excellent" data-lang="excelent">Excellent</option>
+										<option value="Superb" data-lang="super">Super</option>
+										<option value="Not rated" data-lang="dontknow">I don't know</option>
+									</select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label data-lang="price">Price</label>
+                                    <select class="form-control" name="price_review" id="price_review">
+										<option value="" data-lang="pleasereview">Please review</option>
+										<option value="Low" data-lang="low">Low</option>
+										<option value="Sufficient" data-lang="sufficient">Sufficient</option>
+										<option value="Good" data-lang="good">Good</option>
+										<option value="Excellent" data-lang="excelent">Excellent</option>
+										<option value="Superb" data-lang="super">Super</option>
+										<option value="Not rated" data-lang="dontknow">I don't know</option>
+									</select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Quality</label>
+                                    <select class="form-control" name="quality_review" id="quality_review">
+										<option value="">Please review</option>
+										<option value="Low">Low</option>
+										<option value="Sufficient">Sufficient</option>
+										<option value="Good">Good</option>
+										<option value="Excellent">Excellent</option>
+										<option value="Superb">Super</option>
+										<option value="Not rated">I don't know</option>
+									</select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End row -->
+                        <div class="form-group">
+                            <textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
+                        </div>
+                        <input type="submit" value="Submit" class="btn_1" id="submit-review">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal review -->
+
+    <!-- Common scripts -->
+    <script src="js/singleTour.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <!-- Date and time pickers -->
+    <script>
+        $('input.date-pick').datepicker('setDate', 'today');
+        $('input.time-pick').timepicker({
+            minuteStep: 15,
+            showInpunts: false
+        })
+    </script>
+
+    <!-- Specific scripts -->
+    <script src="layerslider/js/greensock.js"></script>
+    <script src="layerslider/js/layerslider.transitions.js"></script>
+    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            'use strict';
+            $('#layerslider').layerSlider({
+                autoStart: true,
+                responsive: true,
+                responsiveUnder: 1280,
+                layersContainer: 1170,
+                skinsPath: 'layerslider/skins/'
+                    // Please make sure that you didn't forget to add a comma to the line endings
+                    // except the last line!
+            });
+        });
+    </script>
+    <!-- Specific scripts - Grid gallery -->
+    <script src="js/jquery.finaltilesgallery.js"></script>
+    <script src="js/lightbox2.js"></script>
+    <script>
+        $(function() {
+            'use strict';
+            //we call Final Tiles Grid Gallery without parameters,
+            //see reference for customisations: http://final-tiles-gallery.com/index.html#get-started
+            $(".final-tiles-gallery").finalTilesGallery();
+        });
+    </script>
+
+
+    <!--Review modal validation -->
+    <script src="assets/validate.js"></script>
+
+    <!-- Map -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAAw4woNIssZ0P5Lonws9W-9LTRHRCMyqc"></script>
+    <script src="js/map.js"></script>
+    <script src="js/infobox.js"></script>
+
+
+</body>
+
+</html>

@@ -935,25 +935,25 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Quality</label>
+                                    <label data-lang="quality">Quality</label>
                                     <select class="form-control" name="quality_review" id="quality_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
+										<option value="" data-lang="pleasereview">Please review</option>
+										<option value="Low" data-lang="low">Low</option>
+										<option value="Sufficient" data-lang="sufficient">Sufficient</option>
+										<option value="Good" data-lang="good">Good</option>
+										<option value="Excellent" data-lang="excelent">Excellent</option>
+										<option value="Superb" data-lang="super">Super</option>
+										<option value="Not rated" data-lang="dontknow">I don't know</option>
 									</select>
                                 </div>
                             </div>
                         </div>
                         <!-- End row -->
                         <div class="form-group">
-                            <textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+                            <textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review" data-lang="writereview"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
+                            <input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =" data-lang="arehuman">
                         </div>
                         <input type="submit" value="Submit" class="btn_1" id="submit-review">
                     </form>
